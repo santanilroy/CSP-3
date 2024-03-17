@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 15px;
+    background-color: rgb(241, 189, 127);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content:hover {
+    background-color: rgb(241, 189, 127);
+    box-shadow: 10px 7px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: 300ms;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 4px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: rgb(21, 21, 80);
+    text-decoration: none;
+}
+
+a:hover {
+    color: aquamarine;
+    transition: 300ms;
+    text-shadow: 5px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+a::after {
+    color: red;
+}
+
+p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+p:hover {
+    color: aquamarine;
+    transition: 300ms;
+}
+
+.row {
+  margin: 0px -18px;
+  padding: 8px;
+}
+
+.row > .column {
+    padding: 6px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    padding: 10px;
+    border: 2px solid grey;
+    background-color: blanchedalmond;
+}
+
+@media screen and (max-width: 850px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .column {
+        width: 100%;
+    }
+}
+
+#login, #singin {
+    background-color: bisque;
+    padding: 10px 10px;
+    display: block;
+    width: 19%;
+    font-size: 18px;
+    margin: 23px auto;
+    border: none;
+    border-radius: 12px;
+
+}
+
+#login:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 5px 3px 2px rgba(0, 0, 0, 0.5);
+    transition: 300ms;
+}
+
+#singin:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 5px 3px 2px rgba(0, 0, 0, 0.5);
+    transition: 300ms;
+}
+
